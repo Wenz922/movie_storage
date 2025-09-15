@@ -1,0 +1,68 @@
+body {
+  background: #F5F5F0;
+  color: black;
+  font-family: Monaco;
+}
+
+.list-movies-title {
+  padding: 10px 0;
+  background: #009B50;
+  color: white;
+  text-align: center;
+  font-size: 16pt;
+}
+
+.movie-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+
+}
+
+.movie-grid li {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.movie {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+.movie-title,
+.movie-year {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.movie-title {
+  margin-top: 10px;
+}
+
+.movie-year {
+  color: #999;
+}
+
+.movie-poster {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 128px;
+    height: 193px;
+}
+
+.movie-rating {
+  color: #ff9900;   /* IMDb gold */
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
