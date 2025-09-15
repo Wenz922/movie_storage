@@ -1,4 +1,5 @@
-
+import os
+from dotenv import load_dotenv
 import movie_storage_sql as storage
 import movies_web_generator as generator
 import requests
@@ -9,7 +10,9 @@ from colorama import Fore, Style
 
 from movies_web_generator import write_html_data
 
-OMDB_API_KEY = "ce56738d"
+load_dotenv()
+
+OMDB_API_KEY = os.getenv("API_KEY")
 OMDB_URL = "http://www.omdbapi.com/"
 
 HTML_FILE = 'static/index_template.html'
