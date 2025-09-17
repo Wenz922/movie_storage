@@ -47,7 +47,7 @@ A Python-based movie database application with:
 1. Run the application:
    ```bash
    python main.py
-2. You’ll see a user (or create a new user) choice:
+2. You’ll see users (or create a new user) choice:
     ```bash
     Select a user:
    1. John

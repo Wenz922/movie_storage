@@ -8,7 +8,6 @@ import random
 import difflib
 from colorama import Fore, Style
 
-from movies_web_generator import write_html_data
 
 load_dotenv()
 
